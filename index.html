@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gym Habit Tracker</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f5f5f5; margin: 40px;}
+        .container { background: #fff; padding: 30px; border-radius: 8px; max-width: 400px; margin: auto; box-shadow: 0 0 10px #bbb;}
+        h1 { text-align: center; }
+        .streak { font-size: 2em; color: #4caf50; text-align: center; }
+        .log { margin-top: 30px;}
+        .log li { padding: 5px 0; }
+        .log-title { font-weight: bold;}
+        form { display: flex; justify-content: center; margin-top: 20px;}
+        button { padding: 10px 20px; background: #4caf50; color: #fff; border: none; border-radius: 4px; cursor: pointer;}
+        button:hover { background: #388e3c;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Gym Habit Tracker</h1>
+        <div class="streak">
+            🏋️‍♂️ Current Streak: {{ streak }} days
+        </div>
+        <form action="{{ url_for('log_today') }}" method="post">
+            <button type="submit">Log Today's Session</button>
+        </form>
+        <div class="log">
+            <div class="log-title">Your Log:</div>
+            <ul>
+                {% for day in log %}
+                <li>{{ day }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
+    <title>Gym Habit Tracker</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f5f5f5; margin: 40px;}
+        .container { background: #fff; padding: 30px; border-radius: 8px; max-width: 400px; margin: auto; box-shadow: 0 0 10px #bbb;}
+        h1 { text-align: center; }
+        .streak { font-size: 2em; color: #4caf50; text-align: center; }
+        .log { margin-top: 30px;}
+        .log li { padding: 5px 0; }
+        .log-title { font-weight: bold;}
+        form { display: flex; justify-content: center; margin-top: 20px;}
+        button { padding: 10px 20px; background: #4caf50; color: #fff; border: none; border-radius: 4px; cursor: pointer;}
+        button:hover { background: #388e3c;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Gym Habit Tracker</h1>
+        <div class="streak">
+            🏋️‍♂️ Current Streak: {{ streak }} days
+        </div>
+        <form action="{{ url_for('log_today') }}" method="post">
+            <button type="submit">Log Today's Session</button>
+        </form>
+        <div class="log">
+            <div class="log-title">Your Log:</div>
+            <ul>
+                {% for day in log %}
+                <li>{{ day }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
