@@ -1,2 +1,43 @@
 here is reddit link
 https://apps.apple.com/us/app/palestra-fitness/id6670456183
+Summary
+The Gym Accountability App is a minimalist and extendable tool for fitness habit tracking. Its goal is to create daily motivation through logging and to offer future integrations for social accountability, streaks, and progress tracking.
+
+Core Features
+1. User Authentication
+🔐 Secure sign up & login using Firebase Authentication
+
+Supports email and password login
+
+Auth state is persisted between sessions
+
+Authenticated users can only access their own data
+
+2. Workout Logging
+📝 Users can log daily workouts with a description
+
+Example: "Chest Day: Bench press, Incline dumbbell press"
+
+Logs are timestamped and saved to Firestore
+
+Input is lightweight and focused to encourage consistency
+
+3. Workout History View
+📆 Displays a list of past workout entries
+
+Sorts workouts by most recent date
+
+Useful for reviewing consistency over time
+
+4. Accountability Tracking (Planned)
+[Note: In development or as future roadmap]
+
+🔁 Daily streaks: track how many consecutive days the user has logged workouts
+
+🔔 Reminders or email alerts if no log is submitted within 24 hours
+
+🤝 Friends/followers to build accountability groups
+
+📊 Analytics dashboard showing monthly trends and personal bests
+
+
