@@ -25,7 +25,7 @@ def calc_streak(data):
         d1 = datetime.date.fromisoformat(data[i])
         d2 = datetime.date.fromisoformat(data[i-1])
         if (d1 - d2).days == 1:
-            streak += 1
+            streak += 1    //add streak makes people  like the  game
         else:
             break
     return streak
