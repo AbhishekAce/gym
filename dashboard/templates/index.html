@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gym Dashboard</title>
+</head>
+<body>
+    <h1>Gym Dashboard</h1>
+    <form method="post">
+        <label for="action">Action:</label>
+        <input type="text" id="action" name="action" required>
+        <button type="submit">Send</button>
+    </form>
+    {% if action %}
+    <p>Last action: {{ action }}</p>
+    {% endif %}
+</body>
+</html>
